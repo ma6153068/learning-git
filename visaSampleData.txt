@@ -1,0 +1,21 @@
+Payload for sap APi=>
+{
+           "definitionId": "visawf",
+            "context": {
+		"visaApprover":"mohd.anwar@inkitsolutions.com",
+ "userID": "111011",
+"email": "mohd.anwar@inkitsolutions.com",
+"name": "Mohd Anwar"
+		}
+  }
+
+
+payload for postman for Node App.
+
+{
+    "visaApprover": "mohd.anwar@inkitsolutions.com",
+    "userID": "111011",
+    "email": "ma6153068@gmail.com",
+    "name": "Mohd Anwar"
+}
+

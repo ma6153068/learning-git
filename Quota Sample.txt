@@ -1,0 +1,15 @@
+{
+"quota":{
+"quotaId":"12345",
+"appDate":"2023-04-05T21:05:58.153Z",
+"quotaDetail":"Deatils quota",
+"payment":"100",
+"manpower":"yes",
+"campTenancy":"Camp",
+"email":"mohd.anwar@inkitsolutions.com"
+"name":"Mohd Anwar",
+"appemail":"ma6153068@gmail.com"
+
+}
+
+}

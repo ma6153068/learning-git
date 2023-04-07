@@ -1,0 +1,138 @@
+Create Repo response->
+
+{
+    "cmisRepositoryId": "f70d897000dfaee56b2ed246",
+    "createdTime": "2023-04-05T21:05:58.153Z",
+    "description": "internal repotory from DMS",
+    "externalId": "AttachmentRepo",
+    "id": "e08263c1-9855-4e6c-91b5-4b0f4b566d86",
+    "lastUpdatedTime": "2023-04-05T21:05:58.153Z",
+    "name": "AttachmentRepo",
+    "repositoryCategory": "Instant",
+    "repositoryParams": [
+        {
+            "paramName": "isVersionEnabled",
+            "paramValue": true
+        },
+        {
+            "paramName": "isThumbnailEnabled",
+            "paramValue": false
+        },
+        {
+            "paramName": "isVirusScanEnabled",
+            "paramValue": true
+        },
+        {
+            "paramName": "hashAlgorithms",
+            "paramValue": "SHA-256"
+        },
+        {
+            "paramName": "isContentBridgeEnabled",
+            "paramValue": true
+        },
+        {
+            "paramName": "skipVirusScanForLargeFile",
+            "paramValue": false
+        },
+        {
+            "paramName": "isCMKEnabled",
+            "paramValue": false
+        }
+    ],
+    "repositorySubType": "SAP Document Management Service",
+    "repositoryType": "internal"
+}
+
+
+document-1 create in the repository->
+
+{
+    "succinctProperties": {
+        "cmis:objectId": "BM94ee-pxDHYWwPN1f1iFd9vZWfgDDbRsu4Ss6YTs14",
+        "cmis:contentStreamHash": [
+            "{sha-256}fa2f1702ff83663d95a567caed86a2de6d87cf97a342de7575e7989ff329cff5"
+        ],
+        "sap:versionSeriesContentLength": 148716,
+        "cmis:lastModifiedBy": "sb-29a5f59e-7562-46ed-9ceb-be11fdf2b104!b111849|sdm-di-DocumentManagement-sdm_integration!b6332",
+        "cmis:versionLabel": "1.0",
+        "cmis:contentStreamId": "5ec6312d1d79bb000608fd75/dbc_f70d897000dfaee56b2ed246_642de2b65eeafd000798d081/397689664_1680730200/123-2396-37e65b06-169b-47a2-a0fd-a9e60f223c96",
+        "cmis:objectTypeId": "cmis:document",
+        "cmis:contentStreamMimeType": "application/pdf",
+        "sap:isCMKEnabled": false,
+        "cmis:createdBy": "sb-29a5f59e-7562-46ed-9ceb-be11fdf2b104!b111849|sdm-di-DocumentManagement-sdm_integration!b6332",
+        "cmis:baseTypeId": "cmis:document",
+        "sap:owner": "sb-29a5f59e-7562-46ed-9ceb-be11fdf2b104!b111849|sdm-di-DocumentManagement-sdm_integration!b6332",
+        "cmis:creationDate": 1680730580816,
+        "cmis:changeToken": "0",
+        "cmis:isVersionSeriesCheckedOut": false,
+        "cmis:isMajorVersion": true,
+        "cmis:contentStreamFileName": "document.pdf",
+        "sap:parentIds": [
+            "f70d897000dfaee56b2ed246"
+        ],
+        "cmis:name": "document.pdf",
+        "cmis:isLatestVersion": true,
+        "cmis:lastModificationDate": 1680730580816,
+        "cmis:versionSeriesId": "f0YsD34T8T4X5T315ymx2KRkJ8mR8PDYz7C_DoOlvS4",
+        "cmis:isLatestMajorVersion": true,
+        "cmis:contentStreamLength": 148716
+    },
+    "exactACL": false
+}
+
+document-2 data in cmis->
+
+{
+    "succinctProperties": {
+        "cmis:objectId": "93jRC7ZRJjpKyxh2ycRC2rkPPnTbC-LUJ8-0ywgbQQk",
+        "cmis:contentStreamHash": [
+            "{sha-256}fa2f1702ff83663d95a567caed86a2de6d87cf97a342de7575e7989ff329cff5"
+        ],
+        "sap:versionSeriesContentLength": 148716,
+        "cmis:lastModifiedBy": "sb-29a5f59e-7562-46ed-9ceb-be11fdf2b104!b111849|sdm-di-DocumentManagement-sdm_integration!b6332",
+        "cmis:versionLabel": "1.0",
+        "cmis:contentStreamId": "5ec6312d1d79bb000608fd75/dbc_f70d897000dfaee56b2ed246_642de2b65eeafd000798d081/-1136732673_1680819300/123-23f9-73e297fe-e21e-4f95-9468-6f141776e249",
+        "cmis:objectTypeId": "cmis:document",
+        "cmis:contentStreamMimeType": "application/pdf",
+        "sap:isCMKEnabled": false,
+        "cmis:createdBy": "sb-29a5f59e-7562-46ed-9ceb-be11fdf2b104!b111849|sdm-di-DocumentManagement-sdm_integration!b6332",
+        "cmis:baseTypeId": "cmis:document",
+        "sap:owner": "sb-29a5f59e-7562-46ed-9ceb-be11fdf2b104!b111849|sdm-di-DocumentManagement-sdm_integration!b6332",
+        "cmis:creationDate": 1680819315297,
+        "cmis:changeToken": "0",
+        "cmis:isVersionSeriesCheckedOut": false,
+        "cmis:isMajorVersion": true,
+        "cmis:contentStreamFileName": "document_2.pdf",
+        "sap:parentIds": [
+            "f70d897000dfaee56b2ed246"
+        ],
+        "cmis:name": "document_2.pdf",
+        "cmis:isLatestVersion": true,
+        "cmis:lastModificationDate": 1680819315297,
+        "cmis:versionSeriesId": "Tk9aJr8bVDJb5EuTtS48-d0pKXb6wfRmNvi7l_fOIhQ",
+        "cmis:isLatestMajorVersion": true,
+        "cmis:contentStreamLength": 148716
+    },
+    "exactACL": false
+}
+
+
+Read document from postman in CMIS repository->
+api -> https://api.workflow-sap.cfapps.us10.hana.ondemand.com/workflow-service/rest/v1/workflow-instances
+payload->
+
+{
+    "definitionId": "doctry",
+    "context": {},
+    "attachments": {
+        "groups": {
+            "default": {
+                "refs": [
+                    {
+                        "objectId": "BM94ee-pxDHYWwPN1f1iFd9vZWfgDDbRsu4Ss6YTs14"
+                    }
+                ]
+            }
+        }
+    }
+}

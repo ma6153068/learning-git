@@ -1,0 +1,7 @@
+workflow links->
+
+https://blogs.sap.com/2021/12/06/part-8-extension-workflow-using-sap-workflow-management-on-sap-btp/
+
+https://github.com/SAP-archive/cloud-platform-workflow-virtual-event/tree/master/exercises/10
+
+https://blogs.sap.com/2020/08/28/create-a-workflow-project-using-sap-business-application-studio-in-the-cloud-foundry-environment/
